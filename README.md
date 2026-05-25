@@ -1,6 +1,6 @@
 # gloss.nvim
 
-Neovim plugin for annotating markdown files using the [gloss](https://github.com/techscene/gloss)
+Neovim plugin for annotating markdown files using the [gloss](https://github.com/stefantrost/gloss)
 annotation format — the same format the gloss TUI produces.
 
 Annotations are paired HTML comments that wrap the lines you're commenting on. They are
@@ -13,7 +13,7 @@ invisible in any rendered markdown view but fully readable by an LLM in raw form
 <!-- ANNOTATION_END: migrations need a rollback strategy -->
 ```
 
-See the [gloss repo](https://github.com/techscene/gloss) for the full annotation format spec
+See the [gloss repo](https://github.com/stefantrost/gloss) for the full annotation format spec
 and the companion TUI.
 
 ---
@@ -42,7 +42,7 @@ and the companion TUI.
 
 ```lua
 {
-  "techscene/gloss.nvim",
+  "stefantrost/gloss.nvim",
   ft = "markdown",
   config = function()
     require("gloss").setup()
@@ -55,7 +55,7 @@ it manually:
 
 ```sh
 # requires Go 1.21+
-go install github.com/techscene/gloss/cmd/gloss@latest
+go install github.com/stefantrost/gloss/cmd/gloss@latest
 ```
 
 ---
