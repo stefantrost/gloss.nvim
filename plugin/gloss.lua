@@ -1,0 +1,2 @@
+-- Intentionally empty: gloss requires explicit setup() to activate.
+-- This file exists so Neovim recognises the plugin directory.
